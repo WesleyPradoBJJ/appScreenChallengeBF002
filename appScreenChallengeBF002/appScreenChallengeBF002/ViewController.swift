@@ -82,10 +82,12 @@ class ViewController: UIViewController, UITextFieldDelegate {
         passwordTextField.placeholder = "Por favor, digite sua senha."
         passwordTextField.textColor = UIColor.black
         passwordTextField.delegate = self
+        passwordTextField.isSecureTextEntry = true
         
         confirmPasswordTextField.placeholder = "Por favor, confirme sua senha."
         confirmPasswordTextField.textColor = UIColor.black
         confirmPasswordTextField.delegate = self
+        confirmPasswordTextField.isSecureTextEntry = true
     }
     
     
