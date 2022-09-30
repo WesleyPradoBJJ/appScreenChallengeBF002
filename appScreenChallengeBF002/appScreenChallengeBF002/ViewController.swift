@@ -104,20 +104,7 @@ class ViewController: UIViewController, UITextFieldDelegate {
     func textFieldDidBeginEditing(_ textField: UITextField) {
         print("TextFieldDidBeginEditing-ok")
         textField.layer.borderColor = UIColor.blue.cgColor
-        switch textField {
-        case nameTextField:
-            nameTextField.layer.borderColor = UIColor.blue.cgColor
-            
-        case adressTextField:
-            adressTextField.layer.borderColor = UIColor.blue.cgColor
-            
-        case passwordTextField:
-            passwordTextField.layer.borderColor = UIColor.blue.cgColor
-            
-        default:
-            break
-        }
-        
+        textField.layer.borderWidth = 2
     }
     
     
